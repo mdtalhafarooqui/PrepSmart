@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PrepSmart | Smart Exam Planner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>PrepSmart</h1>
+    <p>Smart Exam Preparation Planner</p>
+  </header>
+
+  <section class="form-card">
+    <h2>Add Subject</h2>
+    <input id="subject" placeholder="Subject name">
+    <input id="topics" placeholder="Topics (comma separated)">
+    <input id="examDate" type="date">
+    <select id="difficulty">
+      <option value="1">Easy</option>
+      <option value="2">Medium</option>
+      <option value="3">Hard</option>
+    </select>
+    <input id="hours" type="number" placeholder="Daily study hours">
+    <button onclick="addSubject()">Add</button>
+  </section>
+
+  <section class="dashboard">
+    <h2>Your Study Plan</h2>
+    <div id="schedule"></div>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
